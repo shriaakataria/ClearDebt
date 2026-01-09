@@ -32,3 +32,6 @@ ClearDebt is a productivity web app that helps students clear their academic bac
 Add your YouTube API key here in `script.js`:
 ```js
 const YT_KEY = "YOUR_API_KEY";
+
+🔗 Live Demo: https://cleardebt-c97e15.netlify.app/
+
