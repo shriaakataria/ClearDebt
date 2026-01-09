@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClearDebt (Google Hackathon)</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1 class="title">ClearDebt</h1>
+<p class="subtitle">Clear your academic work debt easily 🚀 (Google Edition)</p>
+
+<div class="card">
+<h2>Add Backlog Task</h2>
+<input id="taskName" placeholder="Task name">
+<input id="deadline" type="date">
+<select id="priority">
+<option value="3">High Priority</option>
+<option value="2">Medium Priority</option>
+<option value="1">Low Priority</option>
+</select>
+<button type="button" onclick="addTask()">Add Task</button>
+</div>
+
+<div class="card">
+<h2>Today's Top Tasks</h2>
+<ul id="todayList"></ul>
+</div>
+
+<div class="card">
+<h2>All Tasks</h2>
+<ul id="taskList"></ul>
+</div>
+
+<div class="card">
+<h2>Topic Explorer</h2>
+<input id="topicInput" placeholder="Enter topic (e.g. DBMS)">
+<button type="button" onclick="searchTopic(event)">Search Topic</button>
+
+<h3>YouTube Results (Google API)</h3>
+<div id="videoResults" class="video-grid"></div>
+
+<h3>Google Notes Search</h3>
+<div class="cse-container">
+    <div class="gcse-search"></div>
+</div>
+
+<h3>Practice Questions</h3>
+<ul id="questionResults"></ul>
+</div>
+
+<div class="card">
+<h2>Pomodoro Timer</h2>
+<div id="timerDisplay">25:00</div>
+<button type="button" onclick="startTimer()">Start</button>
+<button type="button" onclick="pauseTimer()">Pause</button>
+<button type="button" onclick="resetTimer()">Reset</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+<script async src="https://cse.google.com/cse.js?cx=30ec0d5532a584542"></script>
+</body>
+</html>
